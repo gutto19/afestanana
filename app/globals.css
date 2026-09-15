@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+:root {
+  --nana-azul: #023BE6;
+  --nana-marinho: #001735;
+
+  --nana-laranja: #CF5600;
+  --nana-amarelo: #FFCB05;
+
+  --nana-oliva: #677226;
+  --nana-verde: #424D23;
+
+  --nana-dourado: #E2982B;
+  --nana-terra: #9D4821;
+
+  --nana-baunilha: #F2E098;
+  --nana-creme: #F4E3BC;
+}
+
+@theme inline {
+  /* FONTES NÃNA */
+  --font-vinila: var(--font-vinila);
+  --font-manteiga: var(--font-manteiga);
+  --font-londrina-thin: var(--font-londrina-thin);
+  --font-londrina-light: var(--font-londrina-light);
+  --font-londrina: var(--font-londrina-regular);
+  --font-londrina-black: var(--font-londrina-black);
+  --font-londrina-shadow: var(--font-londrina-shadow);
+  --font-jaro: var(--font-jaro);
+  --font-jaini: var(--font-jaini);
+
+  /* CORES NÃNA */
+  --color-nana-azul: var(--nana-azul);
+  --color-nana-marinho: var(--nana-marinho);
+  --color-nana-laranja: var(--nana-laranja);
+  --color-nana-amarelo: var(--nana-amarelo);
+  --color-nana-oliva: var(--nana-oliva);
+  --color-nana-verde: var(--nana-verde);
+  --color-nana-dourado: var(--nana-dourado);
+  --color-nana-terra: var(--nana-terra);
+  --color-nana-baunilha: var(--nana-baunilha);
+  --color-nana-creme: var(--nana-creme);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}

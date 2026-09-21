@@ -107,8 +107,8 @@ export default function TimeApoio() {
               Além da pista
             </p>
 
-            <h2 className="max-w-5xl text-5xl uppercase leading-[1] sm:text-6xl md:text-6xl lg:text-7xl xl:text-9xl">
-              Uma NãNA
+            <h2 className="max-w-5xl text-5xl leading-[1] sm:text-6xl md:text-6xl lg:text-7xl xl:text-9xl">
+              UMA NãNA
 
               <br />
 

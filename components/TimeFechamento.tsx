@@ -88,7 +88,7 @@ export default function TimeFechamento() {
               transform: `scale(${0.8 + nana * 0.2})`,
             }}
           >
-            <p className="font-londrina-black text-8xl uppercase leading-none text-nana-azul md:text-[12rem]">
+            <p className="font-londrina-black text-8xl leading-none text-nana-azul md:text-[12rem]">
               NãNA
             </p>
           </div>

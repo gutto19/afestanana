@@ -502,7 +502,7 @@ return ( <main className="min-h-screen bg-nana-creme text-nana-laranja font-vini
         {/* NãNA */}
 
         <h2
-            className="text-[24vw] uppercase leading-none text-nana-azul"
+            className="text-[24vw] leading-none text-nana-azul"
             style={{
             transform: `scale(${
                 0.45 +

@@ -303,7 +303,7 @@ export default function SomEstetica() {
 
       <section className="bg-nana-marinho px-10 py-40 text-center text-nana-creme">
 
-        <p className="text-sm uppercase tracking-[0.3em] text-nana-amarelo">
+        <p className="text-sm tracking-[0.3em] text-nana-amarelo">
           NãNA
         </p>
 

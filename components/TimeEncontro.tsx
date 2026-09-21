@@ -88,14 +88,14 @@ export default function TimeEncontro() {
           {/* UMA NÃNA */}
 
           <h2
-            className="mt-2 text-4xl uppercase leading-[1.05] sm:text-5xl md:text-6xl lg:text-7xl xl:text-9xl"
+            className="mt-2 text-4xl leading-[1.05] sm:text-5xl md:text-6xl lg:text-7xl xl:text-9xl"
             style={{
               opacity: nana,
               transform: `translateY(${60 - nana * 60}px)`,
             }}
           >
             <span className="font-londrina-black text-nana-azul">
-              Uma NãNA.
+              UMA NãNA.
             </span>
           </h2>
 

@@ -11,7 +11,7 @@ const blocos = [
     direcao: -1,
   },
   {
-    texto: "Brasil",
+    texto: "BRASIL",
     fundo: "bg-nana-amarelo",
     textoCor: "text-nana-marinho",
     fonte: "font-manteiga",
@@ -120,7 +120,7 @@ export default function EsteticaVisual() {
                   }}
                 >
                   <span
-                    className={`${bloco.fonte} ${bloco.textoCor} text-5xl uppercase leading-none sm:text-6xl md:text-8xl ${
+                    className={`${bloco.fonte} ${bloco.textoCor} text-5xl leading-none sm:text-6xl md:text-8xl ${
                       index === 1 ? "xl:text-7xl" : ""
                     }`}
                   >

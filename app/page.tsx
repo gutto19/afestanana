@@ -37,8 +37,8 @@ export default function Home() {
       {/* HERO */}
       <section className="flex min-h-[80vh] flex-col items-center justify-center px-5 py-16 text-center sm:px-8 md:px-10">
 
-        <p className="mb-5 text-xs uppercase tracking-[0.2em] sm:mb-6 sm:text-sm sm:tracking-[0.3em]">
-          Muito prazer, somos a NãNA.
+        <p className="mb-5 text-xs tracking-[0.2em] sm:mb-6 sm:text-sm sm:tracking-[0.3em]">
+          MUITO PRAZER, SOMOS A NãNA.
         </p>
 
         <h1 className="max-w-6xl text-5xl uppercase leading-[0.95] sm:text-6xl md:text-8xl md:leading-[1.05]">
@@ -81,9 +81,9 @@ export default function Home() {
 
         <a
           href="#sobre"
-          className="mt-8 border-2 border-nana-laranja px-7 py-3 text-xs uppercase transition hover:bg-nana-laranja hover:text-nana-creme sm:mt-10 sm:px-8 sm:py-4 sm:text-sm"
+          className="mt-8 border-2 border-nana-laranja px-7 py-3 text-xs transition hover:bg-nana-laranja hover:text-nana-creme sm:mt-10 sm:px-8 sm:py-4 sm:text-sm"
         >
-          Conheça a NãNA
+          CONHEÇA A NãNA
         </a>
 
       </section>
@@ -95,8 +95,8 @@ export default function Home() {
       >
         <div className="mx-auto max-w-6xl">
 
-          <p className="mb-6 text-sm uppercase tracking-[0.3em] text-nana-azul">
-            Sobre a NãNA
+          <p className="mb-6 text-sm tracking-[0.3em] text-nana-azul">
+            SOBRE A NãNA
           </p>
 
           <h2 className="max-w-5xl text-5xl uppercase leading-[0.95] md:text-7xl">
@@ -137,8 +137,8 @@ export default function Home() {
 
           {/* TÍTULO */}
 
-          <p className="mb-6 text-sm uppercase tracking-[0.3em] text-nana-amarelo">
-            Projeto NãNA
+          <p className="mb-6 text-sm tracking-[0.3em] text-nana-amarelo">
+            PROJETO NãNA
           </p>
 
           <h2 className="max-w-5xl text-4xl sm:text-5xl md:text-7xl lg:text-8xl uppercase leading-[0.9]">

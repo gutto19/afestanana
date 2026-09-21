@@ -104,16 +104,16 @@ return ( <main className="min-h-screen bg-nana-creme text-nana-laranja font-vini
       NAVBAR
   ========================================= */}
 
-  <nav className="flex items-center justify-between px-10 py-6">
+  <nav className="flex items-center justify-between px-5 py-5 sm:px-8 sm:py-6 md:px-10">
 
     <a
       href="/"
-      className="text-4xl"
+      className="text-3xl sm:text-4xl"
     >
       NãNA
     </a>
 
-    <div className="flex gap-8 text-sm uppercase">
+    <div className="flex gap-5 text-xs uppercase sm:gap-8 sm:text-sm">
 
       <a
         href="/som-estetica"
@@ -147,7 +147,7 @@ return ( <main className="min-h-screen bg-nana-creme text-nana-laranja font-vini
 
   <section
     ref={sectionRef}
-    className="flex min-h-[85vh] items-center px-10 py-32"
+    className="flex min-h-[85vh] items-center px-5 py-20 sm:px-8 sm:py-24 md:px-10 md:py-32"
   >
 
     <div className="mx-auto w-full max-w-7xl">
@@ -165,7 +165,7 @@ return ( <main className="min-h-screen bg-nana-creme text-nana-laranja font-vini
       </p>
 
       <h1
-        className="max-w-6xl text-6xl uppercase leading-[0.9] md:text-[10rem]"
+        className="max-w-6xl text-5xl uppercase leading-[0.9] sm:text-6xl md:text-7xl lg:text-8xl xl:text-[10rem]"
         style={{
           opacity: entrada,
           transform: `translateY(${
@@ -215,7 +215,7 @@ return ( <main className="min-h-screen bg-nana-creme text-nana-laranja font-vini
       CONTATO
   ========================================= */}
 
-  <section className="min-h-screen bg-nana-azul px-10 py-32 text-nana-creme">
+  <section className="min-h-screen bg-nana-azul px-5 py-20 text-nana-creme sm:px-8 sm:py-24 md:px-10 md:py-32">
 
     <div className="mx-auto flex min-h-[70vh] max-w-7xl flex-col justify-center">
 
@@ -223,7 +223,7 @@ return ( <main className="min-h-screen bg-nana-creme text-nana-laranja font-vini
         Fale com a NãNA
       </p>
 
-      <h2 className="max-w-5xl text-5xl uppercase leading-[0.95] md:text-8xl">
+      <h2 className="max-w-5xl text-5xl uppercase leading-[0.95] sm:text-6xl md:text-6xl lg:text-7xl xl:text-8xl">
 
         Música.
 
@@ -233,7 +233,7 @@ return ( <main className="min-h-screen bg-nana-creme text-nana-laranja font-vini
 
         <br />
 
-        <span className="font-manteiga text-nana-amarelo">
+        <span className="font-manteiga text-4xl text-nana-amarelo sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
           Encontros.
         </span>
 
@@ -242,7 +242,7 @@ return ( <main className="min-h-screen bg-nana-creme text-nana-laranja font-vini
 
       {/* CONTATOS */}
 
-      <div className="mt-20 grid gap-6 md:grid-cols-2">
+      <div className="mt-14 grid gap-8 sm:mt-16 md:mt-20 xl:grid-cols-2">
 
         {/* E-MAIL */}
 
@@ -281,7 +281,7 @@ return ( <main className="min-h-screen bg-nana-creme text-nana-laranja font-vini
 
           </div>
 
-          <p className="break-all text-2xl md:text-4xl">
+          <p className="break-all text-xl sm:text-2xl md:text-4xl">
             afestanana@gmail.com
           </p>
 
@@ -332,7 +332,7 @@ return ( <main className="min-h-screen bg-nana-creme text-nana-laranja font-vini
 
           </div>
 
-          <p className="text-2xl md:text-4xl">
+          <p className="text-xl sm:text-2xl md:text-4xl">
             Tem uma pergunta?
           </p>
 
@@ -354,11 +354,11 @@ return ( <main className="min-h-screen bg-nana-creme text-nana-laranja font-vini
         POSSIBILIDADES
     ========================================= */}
 
-    <section className="min-h-[100vh] bg-nana-laranja px-10 py-32 text-nana-creme">
+    <section className="min-h-[100vh] bg-nana-laranja px-5 py-20 text-nana-creme sm:px-8 sm:py-24 md:px-10 md:py-32">
 
     <div className="mx-auto max-w-7xl">
 
-        <p className="mb-20 text-sm uppercase tracking-[0.3em]">
+        <p className="mb-14 text-sm uppercase tracking-[0.3em] sm:mb-16 md:mb-20">
         A gente conversa sobre
         </p>
 
@@ -366,7 +366,7 @@ return ( <main className="min-h-screen bg-nana-creme text-nana-laranja font-vini
 
         {/* LINHA CENTRAL */}
 
-        <div className="absolute left-1/2 top-0 hidden h-full w-px -translate-x-1/2 bg-nana-creme/30 md:block" />
+        <div className="absolute left-1/2 top-0 hidden h-full w-px -translate-x-1/2 bg-nana-creme/30 xl:block" />
 
         {[
             {
@@ -403,10 +403,10 @@ return ( <main className="min-h-screen bg-nana-creme text-nana-laranja font-vini
             return (
             <div
                 key={item.numero}
-                className={`relative mb-20 flex md:mb-28 ${
-                item.lado === "direita"
-                    ? "md:justify-end"
-                    : "md:justify-start"
+                className={`relative mb-20 flex xl:mb-28 ${
+                  item.lado === "direita"
+                    ? "xl:justify-end"
+                    : "xl:justify-start"
                 }`}
                 style={{
                 opacity: aparece,
@@ -419,10 +419,10 @@ return ( <main className="min-h-screen bg-nana-creme text-nana-laranja font-vini
             >
 
                 <div
-                className={`w-full md:w-[46%] ${
-                    item.lado === "direita"
-                    ? "md:text-left"
-                    : "md:text-right"
+                className={`w-full xl:w-[46%] ${
+                  item.lado === "direita"
+                    ? "xl:text-left"
+                    : "xl:text-right"
                 }`}
                 >
 
@@ -434,7 +434,7 @@ return ( <main className="min-h-screen bg-nana-creme text-nana-laranja font-vini
 
                 {/* TÍTULO */}
 
-                <h3 className="text-6xl uppercase leading-[0.8] md:text-8xl">
+                <h3 className="text-5xl uppercase leading-[0.8] sm:text-6xl md:text-8xl">
                     {item.titulo}
                 </h3>
 
@@ -443,8 +443,8 @@ return ( <main className="min-h-screen bg-nana-creme text-nana-laranja font-vini
                 <div
                     className={`my-6 h-[2px] w-full bg-nana-creme ${
                     item.lado === "direita"
-                        ? "md:origin-left"
-                        : "md:origin-right"
+                      ? "xl:origin-left"
+                      : "xl:origin-right"
                     }`}
                     style={{
                     transform: `scaleX(${aparece})`,
@@ -453,7 +453,7 @@ return ( <main className="min-h-screen bg-nana-creme text-nana-laranja font-vini
 
                 {/* DESCRIÇÃO */}
 
-                <p className="max-w-md text-lg leading-relaxed opacity-70 md:ml-auto">
+                <p className="max-w-md text-lg leading-relaxed opacity-70 xl:ml-auto">
                     {item.texto}
                 </p>
 

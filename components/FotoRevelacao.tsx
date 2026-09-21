@@ -48,7 +48,7 @@ export default function FotoRevelacao({
   return (
     <div
       ref={containerRef}
-      className="relative h-[500px] w-full overflow-hidden"
+      className="relative h-[360px] w-full overflow-hidden sm:h-[420px] md:aspect-[1.2] md:h-auto xl:aspect-auto xl:h-[500px] 2xl:aspect-[1.2] 2xl:h-auto"
     >
 
       <div
@@ -61,7 +61,7 @@ export default function FotoRevelacao({
           src={src}
           alt={alt}
           fill
-          className="object-cover grayscale transition-all duration-500 group-hover:grayscale-0"
+          className="object-cover object-[20%_center] grayscale transition-all duration-500 group-hover:grayscale-0"
         />
 
         <div className="absolute inset-0 bg-nana-azul/20 mix-blend-multiply transition-opacity duration-500 group-hover:opacity-0" />

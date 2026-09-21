@@ -79,14 +79,16 @@ export default function TimePessoa({
   return (
     <section
       ref={sectionRef}
-      className={`${fundo} relative overflow-hidden px-10 py-32 text-nana-creme`}
+      className={`${fundo} relative overflow-hidden px-5 py-20 text-nana-creme sm:px-8 sm:py-24 md:px-10 md:py-32`}
     >
       <div className="mx-auto max-w-7xl">
 
         {/* NÚMERO */}
 
         <p
-          className="mb-8 text-sm uppercase tracking-[0.3em]"
+          className={`mb-8 text-sm uppercase tracking-[0.3em] ${
+            lado === "direita" ? "text-right" : "text-left"
+          }`}
           style={{
             color: corFuncao.replace("text-", ""),
             opacity: entrada,
@@ -100,7 +102,7 @@ export default function TimePessoa({
         {/* CONTEÚDO */}
 
 
-        <div className="grid gap-16 md:grid-cols-2">
+        <div className="grid gap-16 xl:grid-cols-2">
 
           {/* FOTO */}
 
@@ -108,7 +110,7 @@ export default function TimePessoa({
             className={
               lado === "esquerda"
                 ? "order-1"
-                : "order-1 md:order-2"
+                : "order-1 xl:order-2"
             }
             style={{
               opacity: entrada,
@@ -120,7 +122,7 @@ export default function TimePessoa({
             }}
           >
             <div
-              className={`relative aspect-[4/5] w-[75%] overflow-hidden ${
+              className={`relative aspect-[4/5] w-full sm:w-[85%] md:w-[75%] overflow-hidden ${
                 lado === "esquerda" ? "mr-auto" : "ml-auto"
               }`}
             >
@@ -140,7 +142,7 @@ export default function TimePessoa({
             className={
               lado === "esquerda"
                 ? "order-2"
-                : "order-2 md:order-1"
+                : "order-2 ml-auto text-right xl:order-1"
             }
             style={{
               opacity: entrada,
@@ -148,7 +150,7 @@ export default function TimePessoa({
             }}
           >
 
-            <h2 className="text-7xl uppercase leading-[0.8] md:text-9xl">
+            <h2 className="text-5xl uppercase leading-[0.8] sm:text-6xl md:text-9xl">
 
               {nome}
 
@@ -168,7 +170,7 @@ export default function TimePessoa({
 
 
             <div
-              className="mt-16"
+              className="mt-10 sm:mt-12 md:mt-16"
               style={{
                 opacity: Math.min(
                   Math.max((progress - 0.25) / 0.75, 0),

@@ -12,16 +12,16 @@ export default function SomEstetica() {
 
       {/* NAVBAR */}
 
-      <nav className="flex items-center justify-between px-10 py-6">
+      <nav className="flex items-center justify-between px-5 py-5 sm:px-8 sm:py-6 md:px-10">
 
         <a
           href="/"
-          className="text-4xl"
+          className="text-3xl sm:text-4xl"
         >
           NãNA
         </a>
 
-        <div className="flex gap-8 text-sm uppercase">
+        <div className="flex gap-5 text-xs uppercase sm:gap-8 sm:text-sm">
 
           <a
             href="/som-estetica"
@@ -55,14 +55,14 @@ export default function SomEstetica() {
 
       <section className="flex min-h-[85vh] items-center px-10 py-32">
 
-        <div className="mx-auto w-full max-w-7xl">
+        <div className="mx-auto max-w-7xl 2xl:max-w-[1800px]">
 
           <p className="mb-10 text-sm uppercase tracking-[0.3em] text-nana-azul">
             Som & Estética
           </p>
 
 
-          <h1 className="max-w-6xl text-6xl uppercase leading-[1.05] md:text-[9rem]">
+          <h1 className="text-5xl uppercase leading-[1.05] sm:text-6xl md:text-7xl min-[900px]:text-9xl xl:text-[9rem] 2xl:text-[11rem]">
 
             O Brasil
 
@@ -107,7 +107,7 @@ export default function SomEstetica() {
 
       <section className="bg-nana-marinho px-10 py-32 text-nana-creme">
 
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-7xl 2xl:max-w-[1600px]">
 
           <p className="mb-8 text-sm uppercase tracking-[0.3em] text-nana-amarelo">
             Curadoria
@@ -184,9 +184,9 @@ export default function SomEstetica() {
           QUEM FAZ O SOM
       ========================================= */}
 
-      <section className="relative overflow-hidden bg-nana-creme px-10 py-32 text-nana-marinho">
+      <section className="relative overflow-hidden bg-nana-creme px-5 py-32 text-nana-marinho sm:px-8 md:px-10">
 
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-7xl 2xl:max-w-[1600px]">
 
           {/* TÍTULO */}
 
@@ -199,7 +199,7 @@ export default function SomEstetica() {
               DJS
           ===================================== */}
 
-          <div className="grid gap-16 md:grid-cols-2">
+          <div className="grid gap-10 sm:gap-12 xl:grid-cols-2 xl:gap-16">
 
 
             {/* ===================================
@@ -208,7 +208,7 @@ export default function SomEstetica() {
 
             <article className="group relative">
 
-            <div className="relative min-h-[700px] overflow-hidden bg-nana-azul p-8 text-nana-creme md:p-12">
+            <div className="relative min-h-[700px] overflow-hidden bg-nana-azul p-5 text-nana-creme sm:p-8 md:p-12">
 
                 {/* FOTO */}
 
@@ -243,9 +243,9 @@ export default function SomEstetica() {
                 GUTO
             =================================== */}
 
-            <article className="group relative md:mt-32">
+            <article className="group relative xl:mt-32">
 
-            <div className="relative min-h-[700px] overflow-hidden bg-nana-laranja p-8 text-nana-creme md:p-12">
+            <div className="relative min-h-[700px] overflow-hidden bg-nana-laranja p-5 text-nana-creme sm:p-8 md:p-12">
 
                 {/* FOTO */}
 
@@ -307,7 +307,7 @@ export default function SomEstetica() {
           NãNA
         </p>
 
-        <h2 className="mx-auto mt-8 max-w-5xl text-6xl uppercase leading-[0.85] md:text-9xl">
+        <h2 className="mx-auto mt-8 max-w-5xl text-4xl uppercase leading-[0.85] sm:text-5xl md:text-7xl lg:text-9xl">
 
           Uma experiência
 

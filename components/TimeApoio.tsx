@@ -87,7 +87,7 @@ export default function TimeApoio() {
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-[180vh] bg-nana-creme px-10 py-32 text-nana-marinho"
+      className="relative min-h-[180vh] bg-nana-creme px-5 py-20 text-nana-marinho sm:px-8 sm:py-24 md:px-10 md:py-32"
     >
       <div className="sticky top-0 flex min-h-screen items-center">
 
@@ -107,7 +107,7 @@ export default function TimeApoio() {
               Além da pista
             </p>
 
-            <h2 className="max-w-5xl text-6xl uppercase leading-[1] md:text-9xl">
+            <h2 className="max-w-5xl text-5xl uppercase leading-[1] sm:text-6xl md:text-6xl lg:text-7xl xl:text-9xl">
               Uma NãNA
 
               <br />
@@ -127,7 +127,7 @@ export default function TimeApoio() {
 
           {/* PESSOAS */}
 
-          <div className="mt-20 grid gap-10 md:grid-cols-3">
+          <div className="mt-20 grid gap-10 xl:grid-cols-3">
 
             {pessoas.map((pessoa, index) => {
 

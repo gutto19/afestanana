@@ -93,7 +93,7 @@ export default function InfoDJ({
         >
 
         <p
-          className={`mb-4 text-sm uppercase tracking-[0.25em] ${
+          className={`mb-4 text-xs uppercase tracking-[0.2em] sm:text-sm sm:tracking-[0.25em] ${
             isTata
               ? "text-nana-amarelo"
               : "text-nana-marinho"
@@ -103,7 +103,7 @@ export default function InfoDJ({
         </p>
 
 
-        <h3 className="text-7xl uppercase leading-[0.8] md:text-8xl">
+        <h3 className="text-5xl uppercase leading-[0.8] sm:text-6xl md:text-8xl">
 
           {nome}
 
@@ -126,7 +126,7 @@ export default function InfoDJ({
 
         <div className="mt-10">
 
-          <p className="mb-5 text-xs uppercase tracking-[0.25em] opacity-60">
+          <p className="mb-4 text-[10px] uppercase tracking-[0.2em] opacity-60 sm:mb-5 sm:text-xs sm:tracking-[0.25em]">
             Estilos
           </p>
 
@@ -139,9 +139,9 @@ export default function InfoDJ({
                 className={
                   index === 0
                     ? isTata
-                      ? "bg-nana-amarelo px-4 py-2 text-sm uppercase text-nana-marinho"
-                      : "bg-nana-marinho px-4 py-2 text-sm uppercase text-nana-creme"
-                    : "border border-nana-creme/50 px-4 py-2 text-sm uppercase"
+                      ? "bg-nana-amarelo px-3 py-1.5 text-xs uppercase text-nana-marinho sm:px-4 sm:py-2 sm:text-sm"
+                      : "bg-nana-marinho px-3 py-1.5 text-xs uppercase text-nana-creme sm:px-4 sm:py-2 sm:text-sm"
+                    : "border border-nana-creme/50 px-3 py-1.5 text-xs uppercase sm:px-4 sm:py-2 sm:text-sm"
                 }
               >
                 {estilo}

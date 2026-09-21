@@ -66,7 +66,7 @@ export default function EsteticaVisual() {
       className="relative min-h-[180vh] bg-nana-creme px-10 py-32 text-nana-marinho"
     >
       <div className="sticky top-0 flex min-h-screen items-center">
-        <div className="mx-auto w-full max-w-7xl">
+        <div className="mx-auto w-full max-w-7xl 2xl:max-w-[1600px]">
 
           {/* TÍTULO */}
 
@@ -81,7 +81,7 @@ export default function EsteticaVisual() {
               Estética
             </p>
 
-            <h2 className="max-w-5xl text-6xl uppercase leading-[1.05] md:text-9xl">
+            <h2 className="max-w-5xl text-6xl uppercase leading-[1.05] md:text-8xl xl:text-9xl">
               A música
               <br />
               também
@@ -94,7 +94,7 @@ export default function EsteticaVisual() {
 
           {/* BLOCOS */}
 
-          <div className="mt-16 grid gap-8 md:grid-cols-3">
+          <div className="mt-16 grid gap-8 overflow-x-clip xl:grid-cols-3">
 
             {blocos.map((bloco, index) => {
 
@@ -120,7 +120,9 @@ export default function EsteticaVisual() {
                   }}
                 >
                   <span
-                    className={`${bloco.fonte} ${bloco.textoCor} text-7xl uppercase leading-none md:text-8xl`}
+                    className={`${bloco.fonte} ${bloco.textoCor} text-5xl uppercase leading-none sm:text-6xl md:text-8xl ${
+                      index === 1 ? "xl:text-7xl" : ""
+                    }`}
                   >
                     {bloco.texto}
                   </span>

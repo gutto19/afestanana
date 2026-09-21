@@ -49,7 +49,7 @@ export default function TituloQuemFazOSom() {
         Quem faz o som
       </p>
 
-      <h2 className="max-w-5xl text-6xl uppercase leading-[0.85] md:text-9xl">
+      <h2 className="max-w-5xl text-4xl uppercase leading-[0.85] sm:text-5xl md:text-8xl lg:text-8xl xl:text-9xl">
 
         <span
           className="block"

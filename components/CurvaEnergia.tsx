@@ -14,28 +14,23 @@ export default function CurvaEnergia() {
       const rect = curvaRef.current.getBoundingClientRect();
       const windowHeight = window.innerHeight;
 
-      /*
-       * A animação começa quando a curva
-       * entra na parte inferior da tela.
-       */
-
       const start = windowHeight * 0.85;
-
-      /*
-       * A animação termina quando a curva
-       * chega aproximadamente ao meio da tela.
-       */
-
-      const end = windowHeight * 0.35;
+      const end = windowHeight * 0.85 - rect.height;
 
       const total = start - end;
-
       const current = start - rect.top;
 
       const calculatedProgress = Math.min(
         Math.max(current / total, 0),
         1
       );
+
+      console.log({
+        viewport: windowHeight,
+        topo: rect.top,
+        current,
+        progress: calculatedProgress
+      });
 
       setProgress(calculatedProgress);
     };
@@ -57,7 +52,7 @@ export default function CurvaEnergia() {
 
       <svg
         viewBox="0 0 1200 420"
-        className="w-full overflow-visible"
+        className="w-full h-auto overflow-visible"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >

@@ -11,16 +11,16 @@ export default function Time() {
           NAVBAR
       ========================================= */}
 
-      <nav className="flex items-center justify-between px-10 py-6">
+      <nav className="flex items-center justify-between px-5 py-5 sm:px-8 sm:py-6 md:px-10">
 
         <a
           href="/"
-          className="text-4xl"
+          className="text-3xl sm:text-4xl"
         >
           NãNA
         </a>
 
-        <div className="flex gap-8 text-sm uppercase">
+        <div className="flex gap-5 text-xs uppercase sm:gap-8 sm:text-sm">
 
           <a
             href="/som-estetica"
@@ -52,7 +52,7 @@ export default function Time() {
           ABERTURA
       ========================================= */}
 
-      <section className="flex min-h-[85vh] items-center px-10 py-32">
+      <section className="flex min-h-[85vh] items-center px-5 py-20 sm:px-8 sm:py-24 md:px-10 md:py-32">
 
         <div className="mx-auto w-full max-w-7xl">
 
@@ -60,7 +60,7 @@ export default function Time() {
             O time
           </p>
 
-          <h1 className="max-w-6xl text-6xl uppercase leading-[1.05] md:text-[9rem]">
+          <h1 className="max-w-6xl text-5xl uppercase leading-[1.05] sm:text-6xl md:text-7xl lg:text-[9rem]">
 
             Por trás da
 

@@ -65,7 +65,7 @@ export default function TransformacaoMusical() {
       className="relative min-h-[180vh] bg-nana-laranja px-10 py-32 text-nana-creme"
     >
       <div className="sticky top-0 flex min-h-screen items-center">
-        <div className="mx-auto w-full max-w-7xl">
+        <div className="mx-auto w-full max-w-7xl 2xl:max-w-[1600px]">
 
           {/* TÍTULO */}
 
@@ -93,7 +93,7 @@ export default function TransformacaoMusical() {
 
           {/* ETAPAS */}
 
-          <div className="mt-24 grid gap-6 md:grid-cols-4">
+          <div className="mt-24 grid gap-6 md:grid-cols-2 xl:grid-cols-4"> 
             {etapas.map((etapa, index) => {
 
               const inicio = 0.25 + index * 0.2;

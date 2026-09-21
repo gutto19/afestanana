@@ -53,7 +53,7 @@ export default function TimeEncontro() {
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-[180vh] bg-nana-marinho px-10 py-32 text-nana-creme"
+      className="relative min-h-[180vh] bg-nana-marinho px-5 py-24 text-nana-creme sm:px-8 sm:py-32 md:px-10"
     >
       <div className="sticky top-0 flex min-h-screen items-center">
 
@@ -75,7 +75,7 @@ export default function TimeEncontro() {
           {/* CINCO OLHARES */}
 
           <h2
-            className="mt-10 text-6xl uppercase leading-[1.05] md:text-9xl"
+            className="mt-10 text-5xl uppercase leading-[1.05] sm:text-6xl md:text-6xl lg:text-7xl xl:text-9xl"
             style={{
               opacity: cinco,
               transform: `translateY(${50 - cinco * 50}px)`,
@@ -88,7 +88,7 @@ export default function TimeEncontro() {
           {/* UMA NÃNA */}
 
           <h2
-            className="mt-2 text-6xl uppercase leading-[1.05] md:text-9xl"
+            className="mt-2 text-4xl uppercase leading-[1.05] sm:text-5xl md:text-6xl lg:text-7xl xl:text-9xl"
             style={{
               opacity: nana,
               transform: `translateY(${60 - nana * 60}px)`,
@@ -103,7 +103,7 @@ export default function TimeEncontro() {
           {/* UMA EXPERIÊNCIA */}
 
           <h2
-            className="mt-2 text-6xl uppercase leading-[1.05] md:text-9xl"
+            className="mt-2 text-4xl uppercase leading-[1.05] sm:text-5xl md:text-6xl lg:text-7xl xl:text-9xl"
             style={{
               opacity: experiencia,
               transform: `translateY(${70 - experiencia * 70}px)`,

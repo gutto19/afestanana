@@ -35,13 +35,13 @@ export default function Home() {
       </nav>
 
       {/* HERO */}
-      <section className="flex min-h-[80vh] flex-col items-center justify-center px-10 text-center">
+      <section className="flex min-h-[80vh] flex-col items-center justify-center px-5 py-16 text-center sm:px-8 md:px-10">
 
-        <p className="mb-6 text-sm uppercase tracking-[0.3em]">
+        <p className="mb-5 text-xs uppercase tracking-[0.2em] sm:mb-6 sm:text-sm sm:tracking-[0.3em]">
           Muito prazer, somos a NãNA.
         </p>
 
-        <h1 className="max-w-6xl text-6xl uppercase leading-[1.05] md:text-8xl">
+        <h1 className="max-w-6xl text-5xl uppercase leading-[0.95] sm:text-6xl md:text-8xl md:leading-[1.05]">
 
           Mais que uma{" "}
           <span className="font-londrina-black text-nana-azul">
@@ -49,15 +49,16 @@ export default function Home() {
           </span>{" "}
           de dança,
 
-          <br />
+          <br className="hidden md:block" />
 
-          uma{" "}
+          {" "}uma{" "}
           <span className="font-manteiga text-nana-azul">
             experiência
           </span>
 
-          <br />
+          <br className="hidden md:block" />
 
+          {" "}
           <span className="font-jaro">
             100%
           </span>{" "}
@@ -65,14 +66,14 @@ export default function Home() {
 
         </h1>
 
-        <p className="mt-10 max-w-2xl text-xl leading-relaxed">
+        <p className="mt-8 max-w-2xl text-lg leading-relaxed sm:mt-10 sm:text-xl">
           Do pop ao funk. Do{" "}
           <span className="text-nana-azul">
             axé
           </span>{" "}
           ao tecnobrega.
-          <br />
-          Do forró à{" "}
+          <br className="hidden sm:block" />
+          {" "}Do forró à{" "}
           <span className="text-nana-azul">
             MPB clássica.
           </span>
@@ -80,7 +81,7 @@ export default function Home() {
 
         <a
           href="#sobre"
-          className="mt-10 border-2 border-nana-laranja px-8 py-4 text-sm uppercase transition hover:bg-nana-laranja hover:text-nana-creme"
+          className="mt-8 border-2 border-nana-laranja px-7 py-3 text-xs uppercase transition hover:bg-nana-laranja hover:text-nana-creme sm:mt-10 sm:px-8 sm:py-4 sm:text-sm"
         >
           Conheça a NãNA
         </a>
@@ -105,7 +106,7 @@ export default function Home() {
             </span>
           </h2>
 
-          <div className="mt-16 grid gap-12 md:grid-cols-2">
+          <div className="mt-10 grid gap-10 md:mt-16 md:gap-12 md:grid-cols-2">
 
             <div>
               <p className="text-2xl leading-relaxed">
@@ -140,7 +141,7 @@ export default function Home() {
             Projeto NãNA
           </p>
 
-          <h2 className="max-w-5xl text-6xl uppercase leading-[0.9] md:text-8xl">
+          <h2 className="max-w-5xl text-4xl sm:text-5xl md:text-7xl lg:text-8xl uppercase leading-[0.9]">
 
             A{" "}
             <span className="font-manteiga text-nana-amarelo">
@@ -157,7 +158,7 @@ export default function Home() {
 
           {/* INTRODUÇÃO */}
 
-          <div className="mt-20 grid gap-16 md:grid-cols-2">
+          <div className="mt-12 grid gap-10 md:mt-20 md:gap-16 md:grid-cols-2">
 
             <div>
               <p className="text-3xl leading-tight">
@@ -201,7 +202,7 @@ export default function Home() {
 
             {/* ETAPAS */}
 
-            <div className="mt-10 grid grid-cols-4 gap-6">
+            <div className="mt-10 grid grid-cols-2 gap-x-6 gap-y-10 md:grid-cols-4">
 
               <div>
                 <p className="mb-2 text-sm uppercase tracking-[0.2em] text-nana-amarelo">

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import TransicaoContato from "@/components/TransicaoContato";
 import TransicaoContatoLaranja from "@/components/TransicaoContatoLaranja";
@@ -106,12 +107,15 @@ return ( <main className="min-h-screen bg-nana-creme text-nana-laranja font-vini
 
   <nav className="flex items-center justify-between px-5 py-5 sm:px-8 sm:py-6 md:px-10">
 
-    <a
-      href="/"
-      className="text-3xl sm:text-4xl"
-    >
-      NãNA
-    </a>
+        <a href="/" className="flex items-center">
+          <Image
+            src="/images/logoprincipal.svg"
+            alt="NãNA"
+            width={100}
+            height={100}
+            className="h-auto w-16 sm:w-20"
+          />
+        </a>
 
     <div className="flex gap-5 text-xs uppercase sm:gap-8 sm:text-sm">
 
@@ -119,7 +123,7 @@ return ( <main className="min-h-screen bg-nana-creme text-nana-laranja font-vini
         href="/som-estetica"
         className="transition-opacity hover:opacity-70"
       >
-        Som & Estética
+        O Som da Nãna
       </a>
 
       <a

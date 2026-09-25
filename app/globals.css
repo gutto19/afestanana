@@ -57,3 +57,25 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes nana-balançar {
+  0%,
+  100% {
+    transform: rotate(-4deg);
+  }
+
+  50% {
+    transform: rotate(4deg);
+  }
+}
+
+@keyframes nana-balançar-inverso {
+  0%,
+  100% {
+    transform: rotate(4deg);
+  }
+
+  50% {
+    transform: rotate(-4deg);
+  }
+}

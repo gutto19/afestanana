@@ -1,3 +1,4 @@
+import Image from "next/image";
 import PlaylistCuradoria from "@/components/PlaylistCuradoria";
 import TituloQuemFazOSom from "@/components/TituloQuemFazOSom";
 import FotoRevelacao from "@/components/FotoRevelacao";
@@ -14,11 +15,14 @@ export default function SomEstetica() {
 
       <nav className="flex items-center justify-between px-5 py-5 sm:px-8 sm:py-6 md:px-10">
 
-        <a
-          href="/"
-          className="text-3xl sm:text-4xl"
-        >
-          NãNA
+        <a href="/" className="flex items-center">
+          <Image
+            src="/images/logoprincipal.svg"
+            alt="NãNA"
+            width={100}
+            height={100}
+            className="h-auto w-16 sm:w-20"
+          />
         </a>
 
         <div className="flex gap-5 text-xs uppercase sm:gap-8 sm:text-sm">
@@ -27,7 +31,7 @@ export default function SomEstetica() {
             href="/som-estetica"
             className="text-nana-azul"
           >
-            Som & Estética
+            O Som da Nãna
           </a>
 
           <a

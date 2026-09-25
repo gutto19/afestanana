@@ -48,8 +48,39 @@ const jainiPurva = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "NãNA",
-  description: "Uma experiência 100% brasileira.",
+  title: {
+    default: "Nãna | Festa de Brasilidades & Música Pop em São Paulo",
+    template: "%s | Nãna",
+  },
+
+  description:
+    "A Nãna é uma festa 100% brasileira em São Paulo. Do pop ao technobrega, do axé à MPB. Uma pista inclusiva, vibrante e cíclica. Ingressos na Shotgun.",
+
+  keywords: [
+    "festa de brasilidades SP",
+    "festa música brasileira São Paulo",
+    "rolê inclusivo SP",
+    "festa pop e technobrega SP",
+    "eventos cultural SP",
+    "Nãna festa Shotgun",
+  ],
+
+  openGraph: {
+    title: "Nãna. Onde a brasilidade perde a casca.",
+    description:
+      "Do pop ao funk, do axé ao technobrega. Conheça a Nãna e garanta sua entrada no fervo.",
+    type: "website",
+    locale: "pt_BR",
+
+    images: [
+      {
+        url: "/images/logonana-hero.svg",
+        width: 1200,
+        height: 630,
+        alt: "Nãna — festa de brasilidades e música brasileira em São Paulo",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
